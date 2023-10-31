@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>create account</title>
+	<link rel="icon" href="icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="createacc.css">
+</head>
+<body>
+    <!-- Preloader -->
+
+	<div class="wrapper">
+		<nav class="navbar">
+			<a href="index.html">
+				<img src="img/logo-b.jpg" src="img/logo-b.jpg" title="just black" height="80px" width="80px">
+			</a>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="developers.html">Developers</a></li>
+				<li><a class="active" href="#">Login</a></li>
+			</ul>
+		</nav>
+		
+</div>
+
+    <div class="preloader-container">
+        <div class="preloader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript to hide the preloader after 5 seconds -->
+    <script>
+        setTimeout(function() {
+            document.querySelector(".preloader-container").style.display = "none";
+        }, 2000); // 2000 milliseconds (2 seconds)
+    </script>
+    <div class="Log-in">
+        <div class="box1">REGISTER</div>
+        <form action="connect.php" method="post">
+            <div class="box2">
+                <form action="connect.php" method="post"></form>
+                <i class="fas fa-user"></i>
+                <input type="text" class="Name" placeholder="Full Name" id="fullName" name="fullName" required/>
+            </div>
+            <div class="box3">
+                <i class="fas fa-phone"></i>
+                <input type="tel" class="PhoneNumber" placeholder="Phone Number" id="phoneNumber" number="phoneNumber"/>
+            </div>
+            <div class="box2">
+                <i class="fas fa-user"></i>
+                <input type="text" class="Username" placeholder="Username" id="userName" username="userName"/>
+            </div>
+            <div class="box3">
+                <i class="fas fa-lock"></i>
+                <input type="password" class="Password" id="password" placeholder="Password" id="password" password="password" required/>
+            </div>
+            <div class="box3">
+                <i class="fas fa-lock"></i>
+                <input type="password" class="ConfirmPassword" id="confirmPassword" placeholder="Confirm Password" required/>
+            </div>
+            <div class="box5">
+                <button type="submit" onclick="validatePassword()">Register</button>
+            </div>
+        </form>
+        <div class="box6">
+            <a href="login.html" class="create-account">Already have an account? Click here to sign in!</a>
+        </div>
+    </div>
+</body> 
+</html>

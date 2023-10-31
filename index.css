@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    background: url(img/background/k.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-position: 100% 0;
+    animation: slide 3s infinite;
+    height: 100vh;
+    transition: background 5s ease-in-out;
+}
+
+@keyframes slide {
+    0% {
+        background-position: 100% 0;
+    }
+    50% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+.navbar {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.navbar .logo {
+    width: 69px;
+    height: auto;
+    padding: 5px 5px;
+}
+
+.navbar ul {
+    float: right;
+    margin-right: 20px;
+    color: #000000;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 80px;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: bold;
+    padding: 6px 13px;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    background: #ff0000;
+    border-radius: 2px;
+}
+
+.wrapper .center {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    user-select: none;
+}
+
+.center h1 {
+    color: #fffefe;
+    font-size: 200px;
+    width: 900px;
+    font-weight: bold;
+    text-align: center;
+    right: 75%;
+    font-family: 'brush script MT';
+    text-shadow: 0 0 8px #ff0000;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>about</title>
+	<link rel="icon" href="icon/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="developers.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<script src="developers.js"></script>-->
+
+</head>
+<body>
+	<div class="wrapper">
+			<nav class="navbar">
+				<a href="index.html">
+					<img src="img/logo-b.jpg" src="img/logo-b.jpg" title="just black" height="80px" width="80px">
+				</a>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a class="active" href="#">Developers</a></li>
+                    <li><a href="login.html">Login</a></li>
+				</ul>
+			</nav>
+			
+	</div>
+
+    <div class="profile" id="profile1">
+        <img src="img/prof/jom.png" alt="Developer 1">
+        <h2>Damot, Jomar<br><br></be></h2>
+        <p>Analyst</p>
+        <p>Email: <br>mardamot@gmail.com</p>
+        <button onclick="toggleDetails('profile1')">Toggle Details</button>
+        <div class="details">
+            <p>GitHub: <a href="https://github.com/Jommmmmmm">Jommmmmmm</a></p>
+        </div>
+    </div>
+
+	<div class="profile" id="profile2">
+        <img src="img/prof/ken.jpg" alt="Developer 2">
+        <h2>Comprado, Kenn Louise</h2>
+        <p>Researcher</p>
+        <p>Email: kennlouise09@gmail.com</p>
+        <button onclick="toggleDetails('profile2')">Toggle Details</button>
+        <div class="details">
+            <p>GitHub: <a href="https://github.com/KennLouise">KennLouise</a></p>
+        </div>
+    </div>
+
+    <div class="profile" id="profile3">
+        <img src="img/prof/aj.jpg" alt="Developer 3">
+        <h2>Relles, Adrian James</h2>
+        <p>Developer</p>
+        <p>Email: decipher.xxx.01@gmail.com</p>
+        <button onclick="toggleDetails('profile3')">Toggle Details</button>
+        <div class="details">
+            <p>GitHub: <a href="https://github.com/EeyyjayyEdu">EeyyjayyEdu</a></p>
+        </div>
+    </div>
+
+    <div class="profile" id="profile4">
+        <img src="img/prof/nico.jpg" alt="Developer 4">
+        <h2>Belmonte, Jacques Nico</h2>
+        <p>Designer</p>
+        <p>Email: belmontenicz17@gmail.com</p>
+        <button onclick="toggleDetails('profile4')">Toggle Details</button>
+        <div class="details">
+            <p>GitHub: <a href="https://github.com/nixbel">nixbel</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Array of background image URLs
+    const backgroundImages = [
+
+        "img/background/j.jpg",
+		"img/background/j.jpg",
+
+    ];
+
+    // Function to change the background image
+    let currentImageIndex = 0;
+    function changeBackground() {
+        document.querySelector(".wrapper").style.backgroundImage = `url(${backgroundImages[currentImageIndex]})`;
+        currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
+    }
+
+    // Initial call to changeBackground
+    changeBackground();
+
+    // Set up a timer to change the background every 3 seconds (3000 milliseconds)
+    setInterval(changeBackground, 5000);
+});
+</script>
+
+<script>
+    function toggleDetails(profileId) {
+    const profile = document.getElementById(profileId);
+    const details = profile.querySelector('.details');
+    details.style.display = details.style.display === 'none' ? 'block' : 'none';
+}
+</script>

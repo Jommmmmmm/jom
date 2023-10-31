@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    background: url(img/background/k.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-position: 100% 0;
+    animation: slide 3s infinite;
+    height: 100vh;
+    transition: background 5s ease-in-out;
+}
+
+@keyframes slide {
+    0% {
+        background-position: 100% 0;
+    }
+    50% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+.navbar {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.navbar .logo {
+    width: 69px;
+    height: auto;
+    padding: 5px 5px;
+}
+
+.navbar ul {
+    float: right;
+    margin-right: 20px;
+    color: #000000;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    line-height: 80px;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: bold;
+    padding: 6px 13px;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    background: #ff0000;
+    border-radius: 2px;
+}
+
+.wrapper .center {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    user-select: none;
+}
+
+.center {
+    background-color: rgba(2, 0, 0, 0.466); /* Transparent white background */
+    padding: 10px; /* Add padding to create a background around the text */
+    text-align: center; /* Center-align the text */
+}
+
+.center h1 {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: fixed;
+    font-family: 'Courier New';
+    text-shadow: 0 0 8px #000000;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('img/background/j.jpg'); /* Replace with the actual image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* Optional, makes the background stay fixed while scrolling */
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0 0px 20px #ff0000;
+}
+
+.profile {
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 0px 12px rgb(255, 0, 0);
+    margin: 10px;
+    transition: transform 0.2s;
+    border-radius: 0;
+    background-color: white;
+    border: 18px solid;
+    border-style: groove;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+.profile h2 {
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.profile p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.details {
+    display: none;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover {
+    background-color: #ff0000;
+    font-family: 'Courier New', Courier, monospace;
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>just black</title>
+    <link rel="icon" href="icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <a href="welcome.html">
+                <img src="img/logo-b.jpg" alt="just black" title="just black" height="80px" width="80px">
+            </a>
+            <ul>
+                <li><a href="welcome.html">Home</a></li>
+                <li><a class="active" href="products.html">Products</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+
+        <br><br><br><br><br>
+        <div class="product-card">
+            <img src="img/logo-b.jpg" alt="Bra" style="width:100%">
+            <h1>Bra</h1>
+            <p class="price">₱145.00</p>
+            <p></p>
+            <p><button class="add-to-cart">Add to Cart</button></p>
+          </div>
+          
+          <div class="product-card">
+            <img src="img/logo-b.jpg" alt="Brief" style="width:100%">
+            <h1>Brief</h1>
+            <p class="price">₱130.00</p>
+            <p></p>
+            <p><button class="add-to-cart">Add to Cart</button></p>
+          </div>
+          
+          <div class="product-card">
+            <img src="img/logo-b.jpg" alt="Panty" style="width:100%">
+            <h1>Panty</h1>
+            <p class="price">₱150.00</p>
+            <p></p>
+            <p><button class="add-to-cart">Add to Cart</button></p>
+          </div>
+          
+          <div class="product-card">
+            <img src="img/logo-b.jpg" alt="Heels" style="width:100%">
+            <h1>Heels</h1>
+            <p class="price">₱400.00</p>
+            <p></p>
+            <p><button class="add-to-cart">Add to Cart</button></p>
+          </div>
+
+          <div class="product-card">
+            <img src="img/logo-b.jpg" alt="Jacket" style="width:100%">
+            <h1>Jacket</h1>
+            <p class="price">₱1500.00</p>
+            <p></p>
+            <p><button class="add-to-cart">Add to Cart</button></p>
+          </div>
+
+          <div class="product-card">
+            <img src="img/logo-b.jpg" alt="Croptop" style="width:100%">
+            <h1>Croptop</h1>
+            <p class="price">₱470.00</p>
+            <p></p>
+            <p><button class="add-to-cart">Add to Cart</button></p>
+          </div>
+
+          <div class="product-card">
+            <img src="img/logo-b.jpg" alt="Dress" style="width:100%">
+            <h1>Dress</h1>
+            <p class="price">₱600.00</p>
+            <p></p>
+            <p><button class="add-to-cart">Add to Cart</button></p>
+          </div>
+
+          <div class="product-card">
+            <img src="img/logo-b.jpg" alt="Leggings" style="width:100%">
+            <h1>Leggings</h1>
+            <p class="price">₱550.00</p>
+            <p></p>
+            <p><button class="add-to-cart">Add to Cart</button></p>
+          </div>
+
+          <div class="product-card">
+            <img src="img/logo-b.jpg" alt="Jeans" style="width:100%">
+            <h1>Jeans</h1>
+            <p class="price">₱1300.00</p>
+            <p></p>
+            <p><button class="add-to-cart">Add to Cart</button></p>
+          </div>
+
+          <div class="product-card">
+            <img src="img/logo-b.jpg" alt="Alcohol" style="width:100%">
+            <h1>Alcohol</h1>
+            <p class="price">₱100.00</p>
+            <p></p>
+            <p><button class="add-to-cart">Add to Cart</button></p>
+          </div>
+
+          <div class="product-card">
+            <img src="img/logo-b.jpg" alt="Pampers" style="width:100%">
+            <h1>Pampers</h1>
+            <p class="price">₱1000.00</p>
+            <p></p>
+            <p><button class="add-to-cart">Add to Cart</button></p>
+          </div>
+
+          <div class="product-card">
+            <img src="img/logo-b.jpg" alt="Towel" style="width:100%">
+            <h1>Towel</h1>
+            <p class="price">₱200.00</p>
+            <p></p>
+            <p><button class="add-to-cart">Add to Cart</button></p>
+          </div>
+
+          <div class="product-card">
+            <img src="img/logo-b.jpg" alt="Napkin" style="width:100%">
+            <h1>Napkin</h1>
+            <p class="price">₱169.00</p>
+            <p></p>
+            <p><button class="add-to-cart">Add to Cart</button></p>
+          </div>
+
+          <div class="product-card">
+            <img src="img/logo-b.jpg" alt="Short" style="width:100%">
+            <h1>Short</h1>
+            <p class="price">₱500.00</p>
+            <p></p>
+            <p><button class="add-to-cart">Add to Cart</button></p>
+          </div>
+
+          <div class="product-card">
+            <img src="img/logo-b.jpg" alt="Pantalon" style="width:100%">
+            <h1>Pantalon</h1>
+            <p class="price">₱1750.00</p>
+            <p></p>
+            <p><button class="add-to-cart">Add to Cart</button></p>
+          </div>
+
+          
+          <!-- Add more product cards here for a total of 10 products -->
+          <br><br><br><br><br>
+          <section class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items">
+                <!-- Cart items will be displayed here using JavaScript -->
+            </ul>
+            <p>Total: <span id="cart-total">₱0.00</span></p>
+            <button id="checkout">Checkout</button>
+            <button id="clear-cart">Clear   </button>
+        </section>
+
+    </div>
+
+</body>
+</html>
+
+<script>
+
+  const products = [
+    { id: 1, name: "Bra", price: 145.00 },
+    { id: 2, name: "Brief", price: 130.00 },
+    { id: 3, name: "Panty", price: 150.00 },
+    { id: 4, name: "Heels", price: 400.00 },
+    { id: 5, name: "Jacket", price: 1500.00 },
+    { id: 6, name: "Croptop", price: 470.00 },
+    { id: 7, name: "Dress", price: 600.00 },
+    { id: 8, name: "Leggings", price: 550.00 },
+    { id: 9, name: "Jeans", price: 1300.00 },
+    { id: 10, name: "Alcohol", price: 100.00 },
+    { id: 11, name: "Pampers", price: 1000.00 },
+    { id: 12, name: "Towel", price: 200.00 },
+    { id: 13, name: "Napkin", price: 169.00 },
+    { id: 14, name: "Short", price: 500.00 },
+    { id: 15, name: "Pantalon", price: 1750.00 },
+    // Add more products as needed
+  ];
+
+  const cart = [];
+  const cartTotal = document.getElementById("cart-total");
+  const cartItems = document.getElementById("cart-items");
+
+  // Display products
+  const productContainer = document.querySelectorAll(".product-card");
+
+  productContainer.forEach((productCard, index) => {
+    const addToCartButton = productCard.querySelector(".add-to-cart");
+    const product = products[index];
+
+    addToCartButton.addEventListener("click", () => {
+      const productId = product.id;
+      const productName = product.name;
+      const productPrice = product.price;
+      addToCart(productId, productName, productPrice);
+    });
+  });
+
+  // Clear cart button
+  const clearCartButton = document.getElementById("clear-cart");
+  clearCartButton.addEventListener("click", clearCart);
+
+  // Add to cart function
+  function addToCart(productId, productName, productPrice) {
+    const existingItem = cart.find(item => item.productId === productId);
+    if (existingItem) {
+      existingItem.quantity++;
+    } else {
+      cart.push({ productId, productName, productPrice, quantity: 1 });
+    }
+    updateCart();
+  }
+
+  // Clear cart function
+  function clearCart() {
+    cart.length = 0;
+    updateCart();
+  }
+
+  // Update cart
+  function updateCart() {
+    cartItems.innerHTML = "";
+    let total = 0;
+
+    cart.forEach(item => {
+      const listItem = document.createElement("li");
+      listItem.textContent = `${item.productName} x ${item.quantity} - ₱${(item.productPrice * item.quantity).toFixed(2)}`;
+      cartItems.appendChild(listItem);
+
+      total += item.productPrice * item.quantity;
+    });
+
+    cartTotal.textContent = `₱${total.toFixed(2)}`;
+  }
+
+  // Initial cart display
+  updateCart();
+
+  // Checkout button
+const checkoutButton = document.getElementById("checkout");
+checkoutButton.addEventListener("click", checkout);
+
+function checkout() {
+  if (cart.length === 0) {
+    alert("Your cart is empty. Add items to your cart before checking out.");
+  } else {
+    // Implement your checkout logic here (e.g., send cart data to a server).
+    alert("Checkout successful! Thank you for your purchase.");
+    clearCart(); // Optionally, clear the cart after successful checkout.
+  }
+}
+
+</script>

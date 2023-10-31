@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>just black</title>
+	<link rel="icon" href="icon/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<div class="wrapper">
+			<nav class="navbar">
+				<a href="index.html">
+					<img src="img/logo-b.jpg" src="img/logo-b.jpg" title="just black" height="80px" width="80px">
+				</a>
+				<!--<img class="logo" src="img/logo-b.jpg">-->
+				<ul>
+					<li><a class="active" href="#">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="developers.html">Developers</a></li>
+                    <li><a href="login.html">Login</a></li>
+				</ul>
+			</nav>
+			<div class="center">
+			<h1><b>just black</b></h1>
+			</div>
+	</div>
+</body>
+</html>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Array of background image URLs
+    const backgroundImages = [
+
+        "img/background/j.jpg",
+		"img/background/j.jpg",
+
+    ];
+
+    // Function to change the background image
+    let currentImageIndex = 0;
+    function changeBackground() {
+        document.querySelector(".wrapper").style.backgroundImage = `url(${backgroundImages[currentImageIndex]})`;
+        currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
+    }
+
+    // Initial call to changeBackground
+    changeBackground();
+
+    // Set up a timer to change the background every 3 seconds (3000 milliseconds)
+    setInterval(changeBackground, 5000);
+});
+</script>

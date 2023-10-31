@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <title>login</title>
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader-container">
+        <div class="preloader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript to hide the preloader after 5 seconds -->
+    <script>
+        setTimeout(function() {
+            document.querySelector(".preloader-container").style.display = "none";
+        }, 2000); // 2000 milliseconds (2 seconds)
+    </script>
+
+<div class="wrapper">
+    <nav class="navbar">
+        <a href="index.html">
+            <img src="img/logo-b.jpg" src="img/logo-b.jpg" title="just black" height="80px" width="80px">
+        </a>
+        <ul>
+            <li><a  href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="developers.html">Developers</a></li>
+            <li><a class="active"href="#">Login</a></li>
+        </ul>
+    </nav>
+</div>
+
+    <div class="Log-in">
+        <div class="box1">LOGIN</div>
+        <form action="index.html" method="post">
+        <div class="box2">
+            <i class="fas fa-user"></i>
+            <input type="text" class="Username" placeholder="Username" required/>
+        </div>
+        <div class="box3">
+            <i class="fas fa-lock"></i>
+            <input type="password" class="Password" placeholder="Password" required/>
+        </div>
+        <div class="box5">
+            <button type="button"><a href="welcome.html">Log In</a></button>
+        </div>
+        </form>
+        <div class = "box6">
+          <a href="createacc.html" class="create-account">Create Account</a>
+        </div>
+
+        <!--<form action="login.php" method="post">
+            <div class="box2">
+                <i class="fas fa-user"></i>
+                <input type="text" class="Username" name="username" placeholder="Username" required />
+            </div>
+            <div class="box3">
+                <i class="fas fa-lock"></i>
+                <input type="password" class="Password" name="password" placeholder="Password" required />
+            </div>
+            <div class="box5">
+                <button type="submit">Log In</button>
+            </div>
+        </form>-->
+
+    </div>
+       
+</body>
+</html>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Array of background image URLs
+        const backgroundImages = [
+    
+            "img/background/j.jpg",
+            "img/background/j.jpg",
+    
+        ];
+    
+        // Function to change the background image
+        let currentImageIndex = 0;
+        function changeBackground() {
+            document.querySelector(".wrapper").style.backgroundImage = `url(${backgroundImages[currentImageIndex]})`;
+            currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
+        }
+    
+        // Initial call to changeBackground
+        changeBackground();
+    
+        // Set up a timer to change the background every 3 seconds (3000 milliseconds)
+        setInterval(changeBackground, 5000);
+    });
+    </script>
